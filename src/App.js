@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch }  from 'react-router-dom';
+import AllQuotes from './pages/NewQuote';
+import NewQuote from './pages/NewQuote';
+import QuoteDetail from './pages/QuoteDetail';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Switch>
+      <Route path="/quotes">
+        <AllQuotes/>
+      </Route>
+      <Route path="/quotes/:quoteId">
+        <QuoteDetail/>
+      </Route>
+      <Route path="/new-quote">
+        <NewQuote/>
+      </Route>
+    </Switch>
   );
-}
-
-export default App;
+  };
+  export default App;
