@@ -9,7 +9,9 @@ return (
 
     <h1> Quote Detail page </h1>
     <p>{params.quoteId}</p>
+<Route path=
 
+{`/quotes/${params.quoteId}/comments`}></Route>
   </Fragment>
 );
 };
