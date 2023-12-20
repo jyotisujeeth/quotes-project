@@ -1,3 +1,5 @@
+
+
 const AllQuotes = () => {
  return<h1> New....Quote Detail page </h1>
 };
