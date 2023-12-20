@@ -22,6 +22,9 @@ function App() {
           <NewQuote />
         </Route>
       </Routes>
+      <Route path="*">
+        <NotFond/>
+      </Route>
     </Switch>
     </Layout>
   );

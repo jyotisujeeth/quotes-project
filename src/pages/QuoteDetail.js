@@ -1,9 +1,22 @@
 import { useParams } from 'react';
 import { Fragment, Route } from 'react';
 
+const DummyQuotes = [
+  { id: "q1", author: "me", text: "hello" },
+  { id: "q2", author: "you", text: "react" },
+];
 const QuoteDetail  = () => {
 const params = useParams();
     
+const quoteDetails=()=> {
+  const= useParams();
+}
+
+
+if(!quoute){
+  console.log("QuoteDetail");
+  return <p>no qutes found</p>
+}
 return (
   <Fragment>
 
